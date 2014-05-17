@@ -235,7 +235,7 @@ return (
 		  if($controller and $exists) then
 			let $controller-result := ctl:get-controller($params)
 			return
-			  (:Call the view if controller result it element:)
+			  (:Call the view if controller result is element return the customised results:)
 			  if($controller-result instance of element()) then (
 				(:Configure your view layer here, call the view controller and pass the result to be processed via view controller:)
 				(:TODO- Return the $controller-result for now :)
