@@ -13,7 +13,7 @@ xquery version "1.0-ml";
 (:~
 : This module will be used to search the content published from Alfresco to ML
 :
-: @author Vikas Singh
+: @author Abhinav Kumar Mishra
 : @since May 10, 2014
 : @version 1.0
 :)
