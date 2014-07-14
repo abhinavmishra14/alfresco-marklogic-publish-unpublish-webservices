@@ -60,3 +60,14 @@ declare function alfrescopub:unpublish($params as element(uit:params)){
 	,
 	xdmp:set-response-code(200,"Document un-published successfully!")
 };
+
+
+(:~
+ : Gets the content
+ :
+ : @param $params - the $params as parameters for getting the content
+ : @return - node
+ :)
+declare function alfrescopub:get($params as element(uit:params)){
+	alfrescopub-mdl:get(util:required-param($params/uit:id, 'id'))
+};
