@@ -39,3 +39,15 @@ declare function alfrescopub:publish($uri as xs:string,$node-to-publish){
 declare function alfrescopub:unpublish($uri as xs:string){
     xdmp:document-delete($uri)
 };
+
+
+(:~
+ : Gets the content
+ :
+ : @param $params - the $params as parameters for getting the content
+ : @return - node
+ :)
+declare function alfrescopub:get($id as xs:string){
+	fn:doc($id)
+};
+
