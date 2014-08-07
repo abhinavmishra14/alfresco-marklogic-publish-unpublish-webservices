@@ -177,7 +177,7 @@ declare function uit:modify-param-set(
  : @param $params A parameters element.
  : @param $sets The name of the parameter sets to be removed. No sets will be removed if empty.
  : @param $new-params New parameters to be inserted as-is. No parameters will be inserted if empty.
- : @param A modified parameters element.
+ : @return A modified parameters element.
  :)
 declare function uit:modify-param-set(
 	$params as element(uit:params),
@@ -202,6 +202,8 @@ declare function uit:modify-param-set(
  :)
 declare function uit:rebuild-querystring () as xs:string
 { uit:rebuild-querystring(()) };
+
+
 (:~
  : Recreate a querystring from the request fields.
  : NOTE: MarkLogic makes no distinction between POST and GET fields. 
@@ -231,6 +233,8 @@ declare function uit:rebuild-querystring ($omit as xs:string*) as xs:string
  :)
 declare function uit:build-querystring($params as element(uit:params)) as xs:string
 { uit:build-querystring($params, ()) };
+
+
 (:~
  : Build a querystring from a parameters element. 
  : NOTE: MarkLogic makes no distinction between POST and GET fields. 
@@ -396,12 +400,11 @@ declare function uit:is-between($num as xs:double, $a as xs:double, $b as xs:dou
 
 (:~ Pad a numeric string $int with leading zeros
  :  for a total length of up to $size :)
-(: TODO: Fix the fn:string-pad call below :)
 declare function uit:lead-zero($int as xs:string, $size as xs:integer) as xs:string
 {
   let $length := fn:string-length($int)
   return
     if ($length lt $size)
-    then fn:concat((:fn:string-pad("0", $size - $length):)"0", $int)
+    then fn:concat("0", $int)
     else $int
 };
