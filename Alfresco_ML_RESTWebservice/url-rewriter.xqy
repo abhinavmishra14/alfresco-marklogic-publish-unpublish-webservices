@@ -1,23 +1,24 @@
 xquery version "1.0-ml";
 
 (:
-: Module Name: Alfrescopub re-writer.
-:
-: Module Version: 1.0
-:
-: Date: 10/05/2014
-:
-:
-: Module Overview: This main module will be used for processing requests coming from alfresco or any application.
-:)
+ : Module Name: Alfrescopub re-writer.
+ :
+ : Module Version: 1.0
+ :
+ : Date: 10/05/2014
+ :
+ : Copyright (c) 2013-2014 Abhinav Kumar Mishra. All rights reserved.
+ :
+ : Module Overview: This main module will be used for processing requests coming from alfresco or any application.
+ :)
 
 (:~
-: This module will be used used for processing requests coming from alfresco or any application.
-:
-: @author Abhinav Kumar Mishra 
-: @since May 10, 2014
-: @version 1.0
-:)
+ : This module will be used used for processing requests coming from alfresco or any application.
+ :
+ : @author Abhinav Kumar Mishra 
+ : @since May 10, 2014
+ : @version 1.0
+ :)
 
 (:~
  : Gets the request body type.

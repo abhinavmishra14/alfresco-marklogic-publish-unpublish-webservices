@@ -7,6 +7,8 @@ xquery version "1.0-ml";
 :
 : Date: 10/05/2014
 :
+: Copyright (c) 2013-2014 Abhinav Kumar Mishra. All rights reserved.
+:
 : Module Overview: This library module will be used for searching the content published from Alfresco to ML. 
 :)
 

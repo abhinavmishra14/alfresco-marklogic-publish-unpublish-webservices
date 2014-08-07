@@ -7,6 +7,8 @@ xquery version "1.0-ml";
 :
 : Date: 11/05/2014
 :
+: Copyright (c) 2013-2014 Abhinav Kumar Mishra. All rights reserved.
+:
 : Module Overview: This library module will be used for providing the utility methods to app. 
 :)
 

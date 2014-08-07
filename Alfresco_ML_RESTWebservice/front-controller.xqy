@@ -1,22 +1,24 @@
 xquery version "1.0-ml";
 
 (:
-: Module Name: Front Controller.
-:
-: Module Version: 1.0
-:
-: Date: 11/05/2014
-:
-: Module Overview: This main module will be used for handling requests such as publish/unpublish coming from alfresco or any application
-:)
+ : Module Name: Front Controller.
+ :
+ : Module Version: 1.0
+ :
+ : Date: 11/05/2014
+ :
+ : Copyright (c) 2013-2014 Abhinav Kumar Mishra. All rights reserved.
+ : 
+ : Module Overview: This main module will be used for handling requests such as publish/unpublish coming from alfresco or any application
+ :)
 
 (:~
-: This module will be used for handling requests such as publish/unpublish coming from alfresco or any application
-:
-: @author Abhinav Kumar Mishra 
-: @since May 10, 2014
-: @version 1.0
-:)
+ : This module will be used for handling requests such as publish/unpublish coming from alfresco or any application
+ :
+ : @author Abhinav Kumar Mishra 
+ : @since May 11, 2014
+ : @version 1.0
+ :)
 import module namespace uit = "http://www.marklogic.com/ps/lib/lib-uitools" at "/lib/lib-uitools.xqy";
 
 declare namespace ctl = "http://example.com/alfresco";
